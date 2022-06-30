@@ -1,0 +1,67 @@
+:root {
+    --white-color: #fff;
+    --black-color: #000;
+    --primary-color: #fcdc31;
+}
+
+html {
+    font-size: 62.5%;
+    font-family: 'Kanit', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    } to {
+        opacity: 1;
+    }
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.3);
+    z-index: 1;
+}
+
+.grid {
+    width: 100%;
+    display: block;
+    padding: 0;
+}
+
+.grid.wide {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.row {
+    display: flex;
+    margin-left: -10px;
+    margin-right: -10px;
+}
+
+.col-3 {
+    width: 25%;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.col-4 {
+    width: 33.33333%;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.col-9 {
+    width: 75%;
+    padding-left: 10px;
+    padding-right: 10px;
+}

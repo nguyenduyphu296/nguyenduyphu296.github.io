@@ -1,0 +1,262 @@
+/* Header */
+.header {
+    background-image: linear-gradient(180deg, black 28%, rgba(0, 0, 0, 0.3)), url(/assets/img/background-head.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.header__navbar {
+    padding-top: 70px;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10px;
+}
+
+.navbar__logo {
+    
+}
+
+.navbar__logo-img {
+    width: 250px;
+    height: 54px;
+}
+
+.navbar__list {
+
+}
+
+.navbar__list-items {
+    font-weight: 500;
+    list-style: none;
+}
+
+.navbar__item {
+    position: relative;
+    display: inline-block;
+    margin: 0 25px;
+    cursor: pointer;
+}
+
+.navbar__item-link {
+    color: var(--white-color);
+    font-size: 1.7rem;
+    font-weight: 700;
+    text-decoration: none;
+    transition: color 0.4s;
+}
+
+.navbar__item-icon {
+    color: var(--white-color);
+    font-size: 1rem;
+}
+
+.navbar__item-link.navbar__item-link--active {
+    color: var(--primary-color);
+}
+
+.navbar__item:hover .navbar__item-link,
+.navbar__item:hover .navbar__item-icon {
+    color: var(--primary-color);
+}
+
+.navbar__item:hover .items {
+    display: block;
+    animation: fadeIn ease-in-out 0.5s;
+}
+
+.items {
+    position: absolute;
+    top: 150%;
+    left: 0;
+    right: 0;
+    width: 144px;
+    padding-left: 0;
+    background-color: white;
+    list-style: none;
+    display: none;
+}
+
+.items::after {
+    content: "";
+    position: absolute;
+    top: -12px;
+    left: 0;
+    width: 50%;
+    height: 20px;
+}
+
+.item__change { 
+    background-color: var(--black-color);
+}
+
+.item__change:hover .item__change-link{
+    background-color: var(--primary-color);
+    color: var(--black-color);
+}
+
+.item__change-link {
+    display: block;
+    font-size: 1.4rem;
+    text-decoration: none;
+    color: var(--primary-color);
+    padding: 20px;
+}
+
+.menu {
+    padding-bottom: 110px;
+}
+
+.menu-head {
+    color: var(--white-color);
+    font-size: 8rem;
+    font-weight: 750;
+    text-align: center;
+    margin: 106px 0 20px;
+}
+
+.menu__list {
+    padding-top: 20px;
+}
+
+.menu__item {
+    position: relative;
+    height: 200px;
+    background-size: cover;
+}
+
+.menu__item-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+.menu__item-link {
+    color: var(--white-color);
+    text-decoration: none;
+    font-size: 1.6rem;
+    font-weight: 600;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* Main */
+.food {
+    padding-top: 110px;
+}
+
+.food__list {
+    margin-bottom: 70px;
+}
+
+.food__introduce {
+    
+}
+
+.food__title {
+    position: relative;
+    font-size: 3rem;
+    color: var(--black-color);
+    margin: 20px 0;
+}
+
+.food__title::before {
+    content: "";
+    position: absolute;
+    top: calc(-100% + 5px);
+    left: 0;
+    width: 60px;
+    height: 5px;
+    background-color: #CE1A26;
+}
+
+.food__describe {
+    font-size: 1.6rem;
+    line-height: 2.6rem;
+    color: #555;
+    font-weight: 500;
+    margin-top: 0;
+}
+
+.food__list-items {
+    margin-left: 12px;
+}
+
+.food__item {
+
+}
+
+.food__item-img {
+    position: relative;
+    height: 400px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.food__item-img:hover .food__item-wrap {
+    display: block;
+    cursor: pointer;
+    animation: fadeIn linear 0.5s;
+}
+
+.food__item-wrap {
+    display: none;
+}
+
+.food__item-overlay {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.food__link {
+    display: block;
+    text-decoration: none;
+    color: var(--white-color);
+    font-size: 1.3rem;
+    position: relative;
+}
+
+.food__link:hover {
+    color: var(--primary-color);
+}
+
+.food__link-delimiter {
+    margin: 0 10px;
+    color: var(--white-color);
+}
+
+.food__info {
+    text-align: center;
+}
+
+.food__name {
+    display: inline-block;
+    font-size: 2.2rem;
+    font-weight: 600;
+    font-style: italic;
+    color: #333;
+    margin: 20px 0 4px;
+}
+
+.food__name:hover {
+    color: #CE1A26;
+    cursor: pointer;
+    transition: color 0.4s;
+}
+
+.food__cost {
+    display: block;
+    font-size: 1.6rem;
+    color: #CE1A26;
+}
